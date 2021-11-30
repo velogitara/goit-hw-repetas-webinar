@@ -131,6 +131,11 @@ button {
     padding-bottom: 248px;
     background-color: var(--secondary-bcg-color);
 }
+.hero-container {
+    width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .hero-section h1 {
     font-weight: normal;
     font-size: 56px;
@@ -151,14 +156,14 @@ button {
 } */
 
 .whatdoing-section {
-    width: 1680px;
     padding: 120px 80px;
+}
+
+.whatdoing-container {
+    width: 1680px;
     margin-left: auto;
     margin-right: auto;
 }
-
-/* .whatdoing-container {
-} */
 .whatdoing-list {
     display: flex;
     flex-wrap: wrap;
@@ -198,6 +203,9 @@ button {
 
 /* ===================== Works-Examples Section =====================  */
 .examples-section {
+    padding: 80px;
+}
+.examples-container {
     width: 1680px;
     margin-left: auto;
     margin-right: auto;
@@ -228,10 +236,12 @@ button {
 /* ===================== Good company Section =====================  */
 
 .good-company-section {
+    padding: 80px 0;
+}
+.good-company-container {
     width: 1680px;
     margin-left: auto;
     margin-right: auto;
-    padding: 80px 0;
 }
 .good-company-section .centered {
     text-align: center;
@@ -258,12 +268,14 @@ button {
 /* ===================== Join company Section ===================== */
 
 .join-section {
-    width: 1680px;
-    margin-right: auto;
-    margin-left: auto;
     padding: 120px 144px 120px 80px;
 }
 
+.join-container {
+    width: 1680px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .join-box {
     display: flex;
     justify-content: space-between;
@@ -316,8 +328,11 @@ button {
 /* ===================== Footer Section ===================== */
 
 .footer-section {
-    width: 1680px;
     padding: 120px 80px;
+}
+.footer-container {
+    width: 1680px;
+
     margin-right: auto;
     margin-left: auto;
 }
