@@ -1,0 +1,64 @@
+.practice {
+    padding: 120px 80px;
+    background-color: blanchedalmond;
+}
+
+.practice__container {
+    width: 1680px;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gainsboro;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.practice__button {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    min-height: 60px;
+    background-color: rgb(20, 98, 216);
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: white;
+
+    transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    &::after {
+        content: '';
+        position: absolute;
+        top: 18px;
+        left: 45px;
+        width: 24px;
+        height: 24px;
+        background-color: rgb(20, 98, 216);
+        background-image: url(../../../images/chein.png);
+        background-size: contain;
+        transition: transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+            background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    }
+
+    &:hover {
+        background-color: rgb(8, 151, 44);
+    }
+    &:hover::after {
+        transform: rotate(180deg);
+        background-color: rgb(8, 151, 44);
+    }
+}
+
+.practice__chein {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
