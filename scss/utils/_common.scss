@@ -13,14 +13,27 @@ body {
     letter-spacing: -0.015em;
 }
 
-ul {
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
-    padding: 0;
-    margin: 0;
+}
+
+.preview-ul.list,
+.section-title-list.list,
+.site-nav-ul.list,
+.list {
+    padding-left: 0;
 }
 a {
     text-decoration: none;
-    display: inline-block;
+    outline: none;
+}
+
+button {
+    font-family: inherit;
+
+    outline-style: none;
 }
 
 h1,
@@ -30,7 +43,41 @@ p,
 ul {
     margin-top: 0;
     margin-bottom: 0;
+    list-style: none;
+    padding: 0;
 }
-button {
-    border: none;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea {
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.section {
+    @media screen and(min-width:1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.container {
+    @media screen and(min-width:480px) {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and(min-width:768px) {
+        width: 768px;
+    }
+    padding: 0 15px;
+
+    @media screen and(min-width: 1200px) {
+        width: 1200px;
+    }
 }
